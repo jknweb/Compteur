@@ -1,5 +1,6 @@
 package com.example.compteur
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -9,6 +10,7 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var buttonAction : Button
     lateinit var counterTextView : TextView
+    lateinit var buttonPlus : Button
 
     var count : Int = 0
 
@@ -18,10 +20,17 @@ class MainActivity : AppCompatActivity() {
 
         buttonAction = findViewById(R.id.buttonAction)
         counterTextView = findViewById(R.id.counter)
+        buttonPlus = findViewById(R.id.buttonPlus)
 
         buttonAction.setOnClickListener {
             count +=1
             counterTextView.text = count.toString()
+        }
+
+        buttonPlus.setOnClickListener {
+            val intent: Intent = Intent (this, greetings::class.java)
+            intent.putExtra("nom", "John Kalombo")
+            startActivity(intent)
         }
     }
 }

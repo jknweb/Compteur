@@ -36,6 +36,12 @@
         android:text="Avancer"
         android:textSize="25dp"/>
 
-
+    <Button
+        android:id="@+id/buttonPlus"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:text="Continuer"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"/>
 
 </LinearLayout>
