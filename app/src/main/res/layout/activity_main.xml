@@ -19,6 +19,7 @@
         android:textSize="35dp"
         android:layout_marginTop="25dp"/>
     <TextView
+        android:id="@+id/counter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
@@ -29,6 +30,7 @@
         android:textSize="200dp"/>
 
     <Button
+        android:id="@+id/buttonAction"
         android:layout_width="250dp"
         android:layout_height="80dp"
         android:text="Avancer"
